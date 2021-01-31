@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world-pod
+  labels:
+    run: helloWorld
+spec:
+  containers:
+    - name: client
+      image: drakobombo/python-tutorial
+      ports:
+        - containerPort: 5000
